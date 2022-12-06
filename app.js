@@ -1,17 +1,16 @@
-const express = require("express");
+const express = require('express');
 
 const app = express();
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send(`
     <h1>Hello from this NodeJS app!</h1>
-    <p>This is the updated version of the application!<p>
     <p>Try sending a request to /error and see what happens</p>
   `);
 });
 
-app.get("/error", (req, res) => {
+app.get('/error', (req, res) => {
   process.exit(1);
 });
 
-app.listen(3000);
+app.listen(8080);
