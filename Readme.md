@@ -175,3 +175,15 @@ $ minikube service <service-name>
 ```
 kubectl delete -f=<config-file-1.yaml> [-f=config-file-2.yaml ...]
 ```
+
+OR
+
+```
+kubectl delete -f=config-file-1.yaml[,config-file-2.yaml, ...]
+```
+
+### Single yaml file for all resources
+
+It is also possible to put all configurations in a single yaml file and run it all once together. Take a look at **master-deployment.yaml** file in this project.
+
+- Note: it is mandatory to use **_---_** seperator between each resource configuration.
