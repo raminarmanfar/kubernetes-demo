@@ -3,12 +3,12 @@ kind: Service
 metadata:
   name: backend
 spec:
-  selector: 
-    app: second-app
+  selector:
+    app: second-demo-app
   ports:
-    - protocol: 'TCP'
-      port: 80
-      targetPort: 8080
+    - protocol: "TCP"
+      port: 3000
+      targetPort: 3000
     # - protocol: 'TCP'
     #   port: 443
     #   targetPort: 443

@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: second-app-deployment
+  name: second-demo-app-deployment
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: second-app
+      app: second-demo-app
       tier: backend
   template:
-    metadata: 
+    metadata:
       labels:
-        app: second-app
+        app: second-demo-app
         tier: backend
-    spec: 
+    spec:
       containers:
-        - name: second-node
-          image: academind/kub-first-app:2
+        - name: second-node-js-demo-app
+          image: raminarmanfar/kub-demo-app:2
         # - name: ...
         #   image: ...
